@@ -13,9 +13,13 @@
 		291500121DA9F0D5002E499A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291500101DA9F0D5002E499A /* Main.storyboard */; };
 		291500141DA9F0D5002E499A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291500131DA9F0D5002E499A /* Assets.xcassets */; };
 		291500171DA9F0D5002E499A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291500151DA9F0D5002E499A /* LaunchScreen.storyboard */; };
+		291500341DA9F47B002E499A /* NetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 291500331DA9F47B002E499A /* NetTool.m */; };
+		5C862284A9A22B936385A009 /* libPods-BZTrip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10C4CE9F9BB7C10C800F8CFC /* Pods-BZTrip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZTrip.release.xcconfig"; path = "Pods/Target Support Files/Pods-BZTrip/Pods-BZTrip.release.xcconfig"; sourceTree = "<group>"; };
+		1E7734EF48094F86F54A9816 /* Pods-BZTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BZTrip/Pods-BZTrip.debug.xcconfig"; sourceTree = "<group>"; };
 		291500041DA9F0D5002E499A /* BZTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BZTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		291500081DA9F0D5002E499A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2915000A1DA9F0D5002E499A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,9 @@
 		291500131DA9F0D5002E499A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		291500161DA9F0D5002E499A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		291500181DA9F0D5002E499A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		291500321DA9F47B002E499A /* NetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetTool.h; sourceTree = "<group>"; };
+		291500331DA9F47B002E499A /* NetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetTool.m; sourceTree = "<group>"; };
+		6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BZTrip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +40,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C862284A9A22B936385A009 /* libPods-BZTrip.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D0B35C304D99A8A522F966B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		291500051DA9F0D5002E499A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,14 +66,10 @@
 		291500061DA9F0D5002E499A /* BZTrip */ = {
 			isa = PBXGroup;
 			children = (
-				2915000A1DA9F0D5002E499A /* AppDelegate.h */,
-				2915000B1DA9F0D5002E499A /* AppDelegate.m */,
-				2915000D1DA9F0D5002E499A /* ViewController.h */,
-				2915000E1DA9F0D5002E499A /* ViewController.m */,
-				291500101DA9F0D5002E499A /* Main.storyboard */,
-				291500131DA9F0D5002E499A /* Assets.xcassets */,
-				291500151DA9F0D5002E499A /* LaunchScreen.storyboard */,
-				291500181DA9F0D5002E499A /* Info.plist */,
+				291500271DA9F3FC002E499A /* main */,
+				2915002A1DA9F40E002E499A /* expand */,
+				291500291DA9F408002E499A /* resource */,
+				291500281DA9F401002E499A /* vendor */,
 				291500071DA9F0D5002E499A /* Supporting Files */,
 			);
 			path = BZTrip;
@@ -71,12 +83,109 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		291500271DA9F3FC002E499A /* main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		291500281DA9F401002E499A /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = vendor;
+			sourceTree = "<group>";
+		};
+		291500291DA9F408002E499A /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				2915002E1DA9F434002E499A /* image */,
+				2915002D1DA9F42F002E499A /* global */,
+				2915002C1DA9F429002E499A /* plist */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		2915002A1DA9F40E002E499A /* expand */ = {
+			isa = PBXGroup;
+			children = (
+				291500311DA9F473002E499A /* db */,
+				291500301DA9F46D002E499A /* tool */,
+				2915002F1DA9F468002E499A /* const */,
+			);
+			name = expand;
+			sourceTree = "<group>";
+		};
+		2915002C1DA9F429002E499A /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				291500181DA9F0D5002E499A /* Info.plist */,
+			);
+			name = plist;
+			sourceTree = "<group>";
+		};
+		2915002D1DA9F42F002E499A /* global */ = {
+			isa = PBXGroup;
+			children = (
+				2915000D1DA9F0D5002E499A /* ViewController.h */,
+				2915000E1DA9F0D5002E499A /* ViewController.m */,
+				291500151DA9F0D5002E499A /* LaunchScreen.storyboard */,
+				291500101DA9F0D5002E499A /* Main.storyboard */,
+				2915000A1DA9F0D5002E499A /* AppDelegate.h */,
+				2915000B1DA9F0D5002E499A /* AppDelegate.m */,
+			);
+			name = global;
+			sourceTree = "<group>";
+		};
+		2915002E1DA9F434002E499A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				291500131DA9F0D5002E499A /* Assets.xcassets */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		2915002F1DA9F468002E499A /* const */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = const;
+			sourceTree = "<group>";
+		};
+		291500301DA9F46D002E499A /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				291500321DA9F47B002E499A /* NetTool.h */,
+				291500331DA9F47B002E499A /* NetTool.m */,
+			);
+			name = tool;
+			sourceTree = "<group>";
+		};
+		291500311DA9F473002E499A /* db */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
 		2915FFFB1DA9F0D4002E499A = {
 			isa = PBXGroup;
 			children = (
 				291500061DA9F0D5002E499A /* BZTrip */,
 				291500051DA9F0D5002E499A /* Products */,
+				E12E9C587454647FBBB64CA8 /* Pods */,
+				1D0B35C304D99A8A522F966B /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		E12E9C587454647FBBB64CA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E7734EF48094F86F54A9816 /* Pods-BZTrip.debug.xcconfig */,
+				10C4CE9F9BB7C10C800F8CFC /* Pods-BZTrip.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2915001B1DA9F0D5002E499A /* Build configuration list for PBXNativeTarget "BZTrip" */;
 			buildPhases = (
+				35975FB0AEB3FA6FC632DE26 /* Check Pods Manifest.lock */,
 				291500001DA9F0D4002E499A /* Sources */,
 				291500011DA9F0D4002E499A /* Frameworks */,
 				291500021DA9F0D4002E499A /* Resources */,
+				36C7DB3312F94F6C308D87BA /* Embed Pods Frameworks */,
+				D143A97B7CD6CD6622A5BBAA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,12 +257,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35975FB0AEB3FA6FC632DE26 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		36C7DB3312F94F6C308D87BA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BZTrip/Pods-BZTrip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D143A97B7CD6CD6622A5BBAA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BZTrip/Pods-BZTrip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		291500001DA9F0D4002E499A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2915000F1DA9F0D5002E499A /* ViewController.m in Sources */,
+				291500341DA9F47B002E499A /* NetTool.m in Sources */,
 				2915000C1DA9F0D5002E499A /* AppDelegate.m in Sources */,
 				291500091DA9F0D5002E499A /* main.m in Sources */,
 			);
@@ -268,6 +429,7 @@
 		};
 		2915001C1DA9F0D5002E499A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7734EF48094F86F54A9816 /* Pods-BZTrip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BZTrip/Info.plist;
@@ -280,6 +442,7 @@
 		};
 		2915001D1DA9F0D5002E499A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10C4CE9F9BB7C10C800F8CFC /* Pods-BZTrip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BZTrip/Info.plist;
