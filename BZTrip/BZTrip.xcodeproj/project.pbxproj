@@ -14,6 +14,7 @@
 		291500141DA9F0D5002E499A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291500131DA9F0D5002E499A /* Assets.xcassets */; };
 		291500171DA9F0D5002E499A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291500151DA9F0D5002E499A /* LaunchScreen.storyboard */; };
 		291500341DA9F47B002E499A /* NetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 291500331DA9F47B002E499A /* NetTool.m */; };
+		2915003C1DA9F668002E499A /* VCBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915003B1DA9F668002E499A /* VCBase.m */; };
 		5C862284A9A22B936385A009 /* libPods-BZTrip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,8 @@
 		291500181DA9F0D5002E499A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		291500321DA9F47B002E499A /* NetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetTool.h; sourceTree = "<group>"; };
 		291500331DA9F47B002E499A /* NetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetTool.m; sourceTree = "<group>"; };
+		2915003A1DA9F668002E499A /* VCBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBase.h; sourceTree = "<group>"; };
+		2915003B1DA9F668002E499A /* VCBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBase.m; sourceTree = "<group>"; };
 		6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BZTrip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +89,10 @@
 		291500271DA9F3FC002E499A /* main */ = {
 			isa = PBXGroup;
 			children = (
+				291500391DA9F63F002E499A /* system */,
+				291500381DA9F63A002E499A /* public */,
+				291500371DA9F636002E499A /* modal */,
+				291500361DA9F633002E499A /* base */,
 			);
 			name = main;
 			sourceTree = "<group>";
@@ -167,6 +174,36 @@
 			children = (
 			);
 			name = db;
+			sourceTree = "<group>";
+		};
+		291500361DA9F633002E499A /* base */ = {
+			isa = PBXGroup;
+			children = (
+				2915003A1DA9F668002E499A /* VCBase.h */,
+				2915003B1DA9F668002E499A /* VCBase.m */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		291500371DA9F636002E499A /* modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = modal;
+			sourceTree = "<group>";
+		};
+		291500381DA9F63A002E499A /* public */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		291500391DA9F63F002E499A /* system */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = system;
 			sourceTree = "<group>";
 		};
 		2915FFFB1DA9F0D4002E499A = {
@@ -314,6 +351,7 @@
 				291500341DA9F47B002E499A /* NetTool.m in Sources */,
 				2915000C1DA9F0D5002E499A /* AppDelegate.m in Sources */,
 				291500091DA9F0D5002E499A /* main.m in Sources */,
+				2915003C1DA9F668002E499A /* VCBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
