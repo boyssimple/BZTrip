@@ -8,21 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		291500091DA9F0D5002E499A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 291500081DA9F0D5002E499A /* main.m */; };
-		2915000C1DA9F0D5002E499A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915000B1DA9F0D5002E499A /* AppDelegate.m */; };
 		2915000F1DA9F0D5002E499A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915000E1DA9F0D5002E499A /* ViewController.m */; };
 		291500121DA9F0D5002E499A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291500101DA9F0D5002E499A /* Main.storyboard */; };
 		291500141DA9F0D5002E499A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291500131DA9F0D5002E499A /* Assets.xcassets */; };
 		291500171DA9F0D5002E499A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 291500151DA9F0D5002E499A /* LaunchScreen.storyboard */; };
-		291500341DA9F47B002E499A /* NetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 291500331DA9F47B002E499A /* NetTool.m */; };
-		2915003C1DA9F668002E499A /* VCBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915003B1DA9F668002E499A /* VCBase.m */; };
-		291500631DAA0281002E499A /* VCNavBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 291500621DAA0281002E499A /* VCNavBase.m */; };
-		291500661DAA028D002E499A /* VCMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 291500651DAA028D002E499A /* VCMain.m */; };
-		2915006F1DAA02DD002E499A /* VCHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915006E1DAA02DD002E499A /* VCHome.m */; };
-		291500721DAA02EB002E499A /* VCDest.m in Sources */ = {isa = PBXBuildFile; fileRef = 291500711DAA02EB002E499A /* VCDest.m */; };
-		291500751DAA02F4002E499A /* VCCause.m in Sources */ = {isa = PBXBuildFile; fileRef = 291500741DAA02F4002E499A /* VCCause.m */; };
-		291500781DAA0301002E499A /* VCDiscover.m in Sources */ = {isa = PBXBuildFile; fileRef = 291500771DAA0301002E499A /* VCDiscover.m */; };
-		2915007B1DAA030A002E499A /* VCMine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915007A1DAA030A002E499A /* VCMine.m */; };
-		291500801DAA03E9002E499A /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915007F1DAA03E9002E499A /* UIView+Frame.m */; };
+		291501731DAB4441002E499A /* VCBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 291501421DAB4441002E499A /* VCBase.m */; };
+		291501741DAB4441002E499A /* VCMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 291501441DAB4441002E499A /* VCMain.m */; };
+		291501751DAB4441002E499A /* VCNavBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 291501461DAB4441002E499A /* VCNavBase.m */; };
+		291501761DAB4441002E499A /* VCCause.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915014A1DAB4441002E499A /* VCCause.m */; };
+		291501771DAB4441002E499A /* VCDest.m in Sources */ = {isa = PBXBuildFile; fileRef = 291501501DAB4441002E499A /* VCDest.m */; };
+		291501781DAB4441002E499A /* VCDiscover.m in Sources */ = {isa = PBXBuildFile; fileRef = 291501561DAB4441002E499A /* VCDiscover.m */; };
+		291501791DAB4441002E499A /* VCHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915015C1DAB4441002E499A /* VCHome.m */; };
+		2915017A1DAB4441002E499A /* VCSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915015E1DAB4441002E499A /* VCSearch.m */; };
+		2915017B1DAB4441002E499A /* VCMine.m in Sources */ = {isa = PBXBuildFile; fileRef = 291501651DAB4441002E499A /* VCMine.m */; };
+		2915017C1DAB4441002E499A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915016A1DAB4441002E499A /* AppDelegate.m */; };
+		2915017D1DAB4441002E499A /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915016F1DAB4441002E499A /* UIView+Frame.m */; };
+		2915017E1DAB4441002E499A /* NetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 291501721DAB4441002E499A /* NetTool.m */; };
 		5C862284A9A22B936385A009 /* libPods-BZTrip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */; };
 /* End PBXBuildFile section */
 
@@ -31,36 +32,38 @@
 		1E7734EF48094F86F54A9816 /* Pods-BZTrip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BZTrip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BZTrip/Pods-BZTrip.debug.xcconfig"; sourceTree = "<group>"; };
 		291500041DA9F0D5002E499A /* BZTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BZTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		291500081DA9F0D5002E499A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2915000A1DA9F0D5002E499A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2915000B1DA9F0D5002E499A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2915000D1DA9F0D5002E499A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		2915000E1DA9F0D5002E499A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		291500111DA9F0D5002E499A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		291500131DA9F0D5002E499A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		291500161DA9F0D5002E499A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		291500181DA9F0D5002E499A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		291500321DA9F47B002E499A /* NetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetTool.h; sourceTree = "<group>"; };
-		291500331DA9F47B002E499A /* NetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetTool.m; sourceTree = "<group>"; };
-		2915003A1DA9F668002E499A /* VCBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBase.h; sourceTree = "<group>"; };
-		2915003B1DA9F668002E499A /* VCBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBase.m; sourceTree = "<group>"; };
-		291500611DAA0281002E499A /* VCNavBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCNavBase.h; sourceTree = "<group>"; };
-		291500621DAA0281002E499A /* VCNavBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCNavBase.m; sourceTree = "<group>"; };
-		291500641DAA028D002E499A /* VCMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMain.h; sourceTree = "<group>"; };
-		291500651DAA028D002E499A /* VCMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMain.m; sourceTree = "<group>"; };
-		2915006D1DAA02DD002E499A /* VCHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCHome.h; sourceTree = "<group>"; };
-		2915006E1DAA02DD002E499A /* VCHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCHome.m; sourceTree = "<group>"; };
-		291500701DAA02EB002E499A /* VCDest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDest.h; sourceTree = "<group>"; };
-		291500711DAA02EB002E499A /* VCDest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDest.m; sourceTree = "<group>"; };
-		291500731DAA02F4002E499A /* VCCause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCause.h; sourceTree = "<group>"; };
-		291500741DAA02F4002E499A /* VCCause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCause.m; sourceTree = "<group>"; };
-		291500761DAA0301002E499A /* VCDiscover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDiscover.h; sourceTree = "<group>"; };
-		291500771DAA0301002E499A /* VCDiscover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDiscover.m; sourceTree = "<group>"; };
-		291500791DAA030A002E499A /* VCMine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMine.h; sourceTree = "<group>"; };
-		2915007A1DAA030A002E499A /* VCMine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMine.m; sourceTree = "<group>"; };
 		2915007C1DAA03C8002E499A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		2915007E1DAA03E9002E499A /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		2915007F1DAA03E9002E499A /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
-		291500811DAA0420002E499A /* NetContants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetContants.h; sourceTree = "<group>"; };
+		291501411DAB4441002E499A /* VCBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCBase.h; sourceTree = "<group>"; };
+		291501421DAB4441002E499A /* VCBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCBase.m; sourceTree = "<group>"; };
+		291501431DAB4441002E499A /* VCMain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMain.h; sourceTree = "<group>"; };
+		291501441DAB4441002E499A /* VCMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMain.m; sourceTree = "<group>"; };
+		291501451DAB4441002E499A /* VCNavBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCNavBase.h; sourceTree = "<group>"; };
+		291501461DAB4441002E499A /* VCNavBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCNavBase.m; sourceTree = "<group>"; };
+		291501491DAB4441002E499A /* VCCause.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCCause.h; sourceTree = "<group>"; };
+		2915014A1DAB4441002E499A /* VCCause.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCCause.m; sourceTree = "<group>"; };
+		2915014F1DAB4441002E499A /* VCDest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDest.h; sourceTree = "<group>"; };
+		291501501DAB4441002E499A /* VCDest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDest.m; sourceTree = "<group>"; };
+		291501551DAB4441002E499A /* VCDiscover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCDiscover.h; sourceTree = "<group>"; };
+		291501561DAB4441002E499A /* VCDiscover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCDiscover.m; sourceTree = "<group>"; };
+		2915015B1DAB4441002E499A /* VCHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCHome.h; sourceTree = "<group>"; };
+		2915015C1DAB4441002E499A /* VCHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCHome.m; sourceTree = "<group>"; };
+		2915015D1DAB4441002E499A /* VCSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCSearch.h; sourceTree = "<group>"; };
+		2915015E1DAB4441002E499A /* VCSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCSearch.m; sourceTree = "<group>"; };
+		291501641DAB4441002E499A /* VCMine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCMine.h; sourceTree = "<group>"; };
+		291501651DAB4441002E499A /* VCMine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCMine.m; sourceTree = "<group>"; };
+		291501691DAB4441002E499A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2915016A1DAB4441002E499A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2915016B1DAB4441002E499A /* NetContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetContants.h; sourceTree = "<group>"; };
+		2915016E1DAB4441002E499A /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		2915016F1DAB4441002E499A /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		291501711DAB4441002E499A /* NetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetTool.h; sourceTree = "<group>"; };
+		291501721DAB4441002E499A /* NetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetTool.m; sourceTree = "<group>"; };
 		6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BZTrip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -95,10 +98,7 @@
 		291500061DA9F0D5002E499A /* BZTrip */ = {
 			isa = PBXGroup;
 			children = (
-				291500271DA9F3FC002E499A /* main */,
-				2915002A1DA9F40E002E499A /* expand */,
-				291500291DA9F408002E499A /* resource */,
-				291500281DA9F401002E499A /* vendor */,
+				2915013F1DAB4441002E499A /* Class */,
 				291500071DA9F0D5002E499A /* Supporting Files */,
 			);
 			path = BZTrip;
@@ -107,203 +107,256 @@
 		291500071DA9F0D5002E499A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				291500131DA9F0D5002E499A /* Assets.xcassets */,
+				2915000D1DA9F0D5002E499A /* ViewController.h */,
+				2915000E1DA9F0D5002E499A /* ViewController.m */,
+				291500151DA9F0D5002E499A /* LaunchScreen.storyboard */,
+				291500101DA9F0D5002E499A /* Main.storyboard */,
+				2915007C1DAA03C8002E499A /* PrefixHeader.pch */,
+				291500181DA9F0D5002E499A /* Info.plist */,
 				291500081DA9F0D5002E499A /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		291500271DA9F3FC002E499A /* main */ = {
+		2915013F1DAB4441002E499A /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				291500391DA9F63F002E499A /* system */,
-				291500381DA9F63A002E499A /* public */,
-				291500371DA9F636002E499A /* modal */,
-				291500361DA9F633002E499A /* base */,
+				291501401DAB4441002E499A /* Base */,
+				291501471DAB4441002E499A /* Cause */,
+				2915014D1DAB4441002E499A /* Dest */,
+				291501531DAB4441002E499A /* Discover */,
+				291501591DAB4441002E499A /* Home */,
+				291501611DAB4441002E499A /* Lib */,
+				291501621DAB4441002E499A /* Mine */,
+				291501681DAB4441002E499A /* Other */,
+				2915016C1DAB4441002E499A /* Tools */,
 			);
-			name = main;
+			path = Class;
 			sourceTree = "<group>";
 		};
-		291500281DA9F401002E499A /* vendor */ = {
+		291501401DAB4441002E499A /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				291501411DAB4441002E499A /* VCBase.h */,
+				291501421DAB4441002E499A /* VCBase.m */,
+				291501431DAB4441002E499A /* VCMain.h */,
+				291501441DAB4441002E499A /* VCMain.m */,
+				291501451DAB4441002E499A /* VCNavBase.h */,
+				291501461DAB4441002E499A /* VCNavBase.m */,
 			);
-			name = vendor;
+			path = Base;
 			sourceTree = "<group>";
 		};
-		291500291DA9F408002E499A /* resource */ = {
+		291501471DAB4441002E499A /* Cause */ = {
 			isa = PBXGroup;
 			children = (
-				2915002E1DA9F434002E499A /* image */,
-				2915002D1DA9F42F002E499A /* global */,
-				2915002C1DA9F429002E499A /* plist */,
+				291501481DAB4441002E499A /* Controller */,
+				2915014B1DAB4441002E499A /* Model */,
+				2915014C1DAB4441002E499A /* View */,
 			);
-			name = resource;
+			path = Cause;
 			sourceTree = "<group>";
 		};
-		2915002A1DA9F40E002E499A /* expand */ = {
+		291501481DAB4441002E499A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2915007D1DAA03DF002E499A /* category */,
-				291500311DA9F473002E499A /* db */,
-				291500301DA9F46D002E499A /* tool */,
-				2915002F1DA9F468002E499A /* const */,
+				291501491DAB4441002E499A /* VCCause.h */,
+				2915014A1DAB4441002E499A /* VCCause.m */,
 			);
-			name = expand;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		2915002C1DA9F429002E499A /* plist */ = {
+		2915014B1DAB4441002E499A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				291500181DA9F0D5002E499A /* Info.plist */,
 			);
-			name = plist;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		2915002D1DA9F42F002E499A /* global */ = {
+		2915014C1DAB4441002E499A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2915000D1DA9F0D5002E499A /* ViewController.h */,
-				2915000E1DA9F0D5002E499A /* ViewController.m */,
-				291500151DA9F0D5002E499A /* LaunchScreen.storyboard */,
-				291500101DA9F0D5002E499A /* Main.storyboard */,
-				2915000A1DA9F0D5002E499A /* AppDelegate.h */,
-				2915000B1DA9F0D5002E499A /* AppDelegate.m */,
-				2915007C1DAA03C8002E499A /* PrefixHeader.pch */,
 			);
-			name = global;
+			path = View;
 			sourceTree = "<group>";
 		};
-		2915002E1DA9F434002E499A /* image */ = {
+		2915014D1DAB4441002E499A /* Dest */ = {
 			isa = PBXGroup;
 			children = (
-				291500131DA9F0D5002E499A /* Assets.xcassets */,
+				2915014E1DAB4441002E499A /* Controller */,
+				291501511DAB4441002E499A /* Model */,
+				291501521DAB4441002E499A /* View */,
 			);
-			name = image;
+			path = Dest;
 			sourceTree = "<group>";
 		};
-		2915002F1DA9F468002E499A /* const */ = {
+		2915014E1DAB4441002E499A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				291500811DAA0420002E499A /* NetContants.h */,
+				2915014F1DAB4441002E499A /* VCDest.h */,
+				291501501DAB4441002E499A /* VCDest.m */,
 			);
-			name = const;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		291500301DA9F46D002E499A /* tool */ = {
+		291501511DAB4441002E499A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				291500321DA9F47B002E499A /* NetTool.h */,
-				291500331DA9F47B002E499A /* NetTool.m */,
 			);
-			name = tool;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		291500311DA9F473002E499A /* db */ = {
+		291501521DAB4441002E499A /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = db;
+			path = View;
 			sourceTree = "<group>";
 		};
-		291500361DA9F633002E499A /* base */ = {
+		291501531DAB4441002E499A /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				2915003A1DA9F668002E499A /* VCBase.h */,
-				2915003B1DA9F668002E499A /* VCBase.m */,
-				291500611DAA0281002E499A /* VCNavBase.h */,
-				291500621DAA0281002E499A /* VCNavBase.m */,
+				291501541DAB4441002E499A /* Controller */,
+				291501571DAB4441002E499A /* Model */,
+				291501581DAB4441002E499A /* View */,
 			);
-			name = base;
+			path = Discover;
 			sourceTree = "<group>";
 		};
-		291500371DA9F636002E499A /* modal */ = {
+		291501541DAB4441002E499A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2915006C1DAA02D3002E499A /* home */,
-				2915006B1DAA02BC002E499A /* destination */,
-				2915006A1DAA02B8002E499A /* cause */,
-				291500691DAA02AE002E499A /* discover */,
-				291500681DAA02A7002E499A /* mine */,
+				291501551DAB4441002E499A /* VCDiscover.h */,
+				291501561DAB4441002E499A /* VCDiscover.m */,
 			);
-			name = modal;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		291500381DA9F63A002E499A /* public */ = {
+		291501571DAB4441002E499A /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = public;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		291500391DA9F63F002E499A /* system */ = {
+		291501581DAB4441002E499A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				291500671DAA028F002E499A /* main */,
 			);
-			name = system;
+			path = View;
 			sourceTree = "<group>";
 		};
-		291500671DAA028F002E499A /* main */ = {
+		291501591DAB4441002E499A /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				291500641DAA028D002E499A /* VCMain.h */,
-				291500651DAA028D002E499A /* VCMain.m */,
+				2915015A1DAB4441002E499A /* Controller */,
+				2915015F1DAB4441002E499A /* Model */,
+				291501601DAB4441002E499A /* View */,
 			);
-			name = main;
+			path = Home;
 			sourceTree = "<group>";
 		};
-		291500681DAA02A7002E499A /* mine */ = {
+		2915015A1DAB4441002E499A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				291500791DAA030A002E499A /* VCMine.h */,
-				2915007A1DAA030A002E499A /* VCMine.m */,
+				2915015B1DAB4441002E499A /* VCHome.h */,
+				2915015C1DAB4441002E499A /* VCHome.m */,
+				2915015D1DAB4441002E499A /* VCSearch.h */,
+				2915015E1DAB4441002E499A /* VCSearch.m */,
 			);
-			name = mine;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		291500691DAA02AE002E499A /* discover */ = {
+		2915015F1DAB4441002E499A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				291500761DAA0301002E499A /* VCDiscover.h */,
-				291500771DAA0301002E499A /* VCDiscover.m */,
 			);
-			name = discover;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		2915006A1DAA02B8002E499A /* cause */ = {
+		291501601DAB4441002E499A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				291500731DAA02F4002E499A /* VCCause.h */,
-				291500741DAA02F4002E499A /* VCCause.m */,
 			);
-			name = cause;
+			path = View;
 			sourceTree = "<group>";
 		};
-		2915006B1DAA02BC002E499A /* destination */ = {
+		291501611DAB4441002E499A /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				291500701DAA02EB002E499A /* VCDest.h */,
-				291500711DAA02EB002E499A /* VCDest.m */,
 			);
-			name = destination;
+			path = Lib;
 			sourceTree = "<group>";
 		};
-		2915006C1DAA02D3002E499A /* home */ = {
+		291501621DAB4441002E499A /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				2915006D1DAA02DD002E499A /* VCHome.h */,
-				2915006E1DAA02DD002E499A /* VCHome.m */,
+				291501631DAB4441002E499A /* Controller */,
+				291501661DAB4441002E499A /* Model */,
+				291501671DAB4441002E499A /* View */,
 			);
-			name = home;
+			path = Mine;
 			sourceTree = "<group>";
 		};
-		2915007D1DAA03DF002E499A /* category */ = {
+		291501631DAB4441002E499A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2915007E1DAA03E9002E499A /* UIView+Frame.h */,
-				2915007F1DAA03E9002E499A /* UIView+Frame.m */,
+				291501641DAB4441002E499A /* VCMine.h */,
+				291501651DAB4441002E499A /* VCMine.m */,
 			);
-			name = category;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		291501661DAB4441002E499A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		291501671DAB4441002E499A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		291501681DAB4441002E499A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				291501691DAB4441002E499A /* AppDelegate.h */,
+				2915016A1DAB4441002E499A /* AppDelegate.m */,
+				2915016B1DAB4441002E499A /* NetContants.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2915016C1DAB4441002E499A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2915016D1DAB4441002E499A /* Category */,
+				291501701DAB4441002E499A /* Network */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2915016D1DAB4441002E499A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2915016E1DAB4441002E499A /* UIView+Frame.h */,
+				2915016F1DAB4441002E499A /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		291501701DAB4441002E499A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				291501711DAB4441002E499A /* NetTool.h */,
+				291501721DAB4441002E499A /* NetTool.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		2915FFFB1DA9F0D4002E499A = {
@@ -447,19 +500,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2915017A1DAB4441002E499A /* VCSearch.m in Sources */,
+				291501771DAB4441002E499A /* VCDest.m in Sources */,
+				2915017B1DAB4441002E499A /* VCMine.m in Sources */,
+				291501761DAB4441002E499A /* VCCause.m in Sources */,
+				291501751DAB4441002E499A /* VCNavBase.m in Sources */,
+				2915017E1DAB4441002E499A /* NetTool.m in Sources */,
+				2915017D1DAB4441002E499A /* UIView+Frame.m in Sources */,
 				2915000F1DA9F0D5002E499A /* ViewController.m in Sources */,
-				291500341DA9F47B002E499A /* NetTool.m in Sources */,
-				291500751DAA02F4002E499A /* VCCause.m in Sources */,
-				2915000C1DA9F0D5002E499A /* AppDelegate.m in Sources */,
-				291500661DAA028D002E499A /* VCMain.m in Sources */,
-				291500801DAA03E9002E499A /* UIView+Frame.m in Sources */,
-				2915007B1DAA030A002E499A /* VCMine.m in Sources */,
+				291501741DAB4441002E499A /* VCMain.m in Sources */,
+				291501731DAB4441002E499A /* VCBase.m in Sources */,
+				2915017C1DAB4441002E499A /* AppDelegate.m in Sources */,
 				291500091DA9F0D5002E499A /* main.m in Sources */,
-				2915006F1DAA02DD002E499A /* VCHome.m in Sources */,
-				2915003C1DA9F668002E499A /* VCBase.m in Sources */,
-				291500781DAA0301002E499A /* VCDiscover.m in Sources */,
-				291500721DAA02EB002E499A /* VCDest.m in Sources */,
-				291500631DAA0281002E499A /* VCNavBase.m in Sources */,
+				291501791DAB4441002E499A /* VCHome.m in Sources */,
+				291501781DAB4441002E499A /* VCDiscover.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
