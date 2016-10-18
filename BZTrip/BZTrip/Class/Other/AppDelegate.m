@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "VCMain.h"
+#import "MainAdvertiseView.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +23,10 @@
     [self.window makeKeyAndVisible];
     VCMain *vc = [[VCMain alloc]init];
     self.window.rootViewController = vc;
-
+    
+    //广告
+//    MainAdvertiseView *adsView = [[MainAdvertiseView alloc]init];
+//    [self.window addSubview:adsView];
     return YES;
 }
 

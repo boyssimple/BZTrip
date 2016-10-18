@@ -29,28 +29,28 @@
     NSArray *childItemsArray = @[
                                  @{kClassKey  : @"VCHome",
                                    kTitleKey  : @"主页",
-                                   kImgKey    : @"TabMessageIcon",
-                                   kSelImgKey : @"TabMessageIcon"},
+                                   kImgKey    : @"Main_Tab_Selected_01",
+                                   kSelImgKey : @"Main_Tab_Selected_01"},
                                  
                                  @{kClassKey  : @"VCDest",
                                    kTitleKey  : @"目的地",
-                                   kImgKey    : @"TabFriendIcon",
-                                   kSelImgKey : @"TabFriendIcon"},
+                                   kImgKey    : @"Main_Tab_Normal_02",
+                                   kSelImgKey : @"Main_Tab_Normal_02"},
                                  
                                  @{kClassKey  : @"VCCause",
                                    kTitleKey  : @"事业",
-                                   kImgKey    : @"TabDiscoverIcon",
-                                   kSelImgKey : @"TabDiscoverIcon"},
+                                   kImgKey    : @"Main_Tab_Normal_03",
+                                   kSelImgKey : @"Main_Tab_Normal_03"},
                                  
                                  @{kClassKey  : @"VCDiscover",
                                    kTitleKey  : @"发现",
-                                   kImgKey    : @"TabMeIcon",
-                                   kSelImgKey : @"TabMeIcon"} ,
+                                   kImgKey    : @"Main_Tab_Normal_04",
+                                   kSelImgKey : @"Main_Tab_Normal_04"} ,
                                  
                                  @{kClassKey  : @"VCMine",
                                    kTitleKey  : @"我的",
-                                   kImgKey    : @"TabMeIcon",
-                                   kSelImgKey : @"TabMeIcon"} ];
+                                   kImgKey    : @"Main_Tab_Normal_05",
+                                   kSelImgKey : @"Main_Tab_Normal_05"} ];
     
     [childItemsArray enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL *stop) {
         UIViewController *vc = [NSClassFromString(dict[kClassKey]) new];
