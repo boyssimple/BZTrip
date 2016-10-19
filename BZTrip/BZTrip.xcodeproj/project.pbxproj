@@ -43,6 +43,11 @@
 		297A96491DB6239300C3B943 /* MainFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96461DB6239300C3B943 /* MainFunc.m */; };
 		297A964A1DB6239300C3B943 /* MainTravel.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96481DB6239300C3B943 /* MainTravel.m */; };
 		297A964D1DB623DE00C3B943 /* DisPicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A964C1DB623DE00C3B943 /* DisPicCell.m */; };
+		297A96501DB711E200C3B943 /* DestCollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A964F1DB711E200C3B943 /* DestCollView.m */; };
+		297A96531DB7158200C3B943 /* CauseCollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96521DB7158200C3B943 /* CauseCollView.m */; };
+		297A96561DB7194F00C3B943 /* CauseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96551DB7194F00C3B943 /* CauseHeaderView.m */; };
+		297A96591DB71D6F00C3B943 /* CauseOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96581DB71D6F00C3B943 /* CauseOrderView.m */; };
+		297A965C1DB7258000C3B943 /* MineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A965B1DB7258000C3B943 /* MineHeaderView.m */; };
 		5C862284A9A22B936385A009 /* libPods-BZTrip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +122,16 @@
 		297A96481DB6239300C3B943 /* MainTravel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTravel.m; sourceTree = "<group>"; };
 		297A964B1DB623DE00C3B943 /* DisPicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisPicCell.h; sourceTree = "<group>"; };
 		297A964C1DB623DE00C3B943 /* DisPicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisPicCell.m; sourceTree = "<group>"; };
+		297A964E1DB711E200C3B943 /* DestCollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestCollView.h; sourceTree = "<group>"; };
+		297A964F1DB711E200C3B943 /* DestCollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestCollView.m; sourceTree = "<group>"; };
+		297A96511DB7158200C3B943 /* CauseCollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CauseCollView.h; sourceTree = "<group>"; };
+		297A96521DB7158200C3B943 /* CauseCollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CauseCollView.m; sourceTree = "<group>"; };
+		297A96541DB7194F00C3B943 /* CauseHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CauseHeaderView.h; sourceTree = "<group>"; };
+		297A96551DB7194F00C3B943 /* CauseHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CauseHeaderView.m; sourceTree = "<group>"; };
+		297A96571DB71D6F00C3B943 /* CauseOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CauseOrderView.h; sourceTree = "<group>"; };
+		297A96581DB71D6F00C3B943 /* CauseOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CauseOrderView.m; sourceTree = "<group>"; };
+		297A965A1DB7258000C3B943 /* MineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHeaderView.h; sourceTree = "<group>"; };
+		297A965B1DB7258000C3B943 /* MineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHeaderView.m; sourceTree = "<group>"; };
 		6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BZTrip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -176,12 +191,12 @@
 			isa = PBXGroup;
 			children = (
 				291501401DAB4441002E499A /* Base */,
-				291501471DAB4441002E499A /* Cause */,
-				2915014D1DAB4441002E499A /* Dest */,
-				291501531DAB4441002E499A /* Discover */,
 				291501591DAB4441002E499A /* Home */,
-				291501611DAB4441002E499A /* Lib */,
+				2915014D1DAB4441002E499A /* Dest */,
+				291501471DAB4441002E499A /* Cause */,
+				291501531DAB4441002E499A /* Discover */,
 				291501621DAB4441002E499A /* Mine */,
+				291501611DAB4441002E499A /* Lib */,
 				291501681DAB4441002E499A /* Other */,
 				2915016C1DAB4441002E499A /* Tools */,
 			);
@@ -230,6 +245,12 @@
 		2915014C1DAB4441002E499A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				297A96511DB7158200C3B943 /* CauseCollView.h */,
+				297A96521DB7158200C3B943 /* CauseCollView.m */,
+				297A96541DB7194F00C3B943 /* CauseHeaderView.h */,
+				297A96551DB7194F00C3B943 /* CauseHeaderView.m */,
+				297A96571DB71D6F00C3B943 /* CauseOrderView.h */,
+				297A96581DB71D6F00C3B943 /* CauseOrderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +284,8 @@
 		291501521DAB4441002E499A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				297A964E1DB711E200C3B943 /* DestCollView.h */,
+				297A964F1DB711E200C3B943 /* DestCollView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -396,6 +419,8 @@
 		291501671DAB4441002E499A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				297A965A1DB7258000C3B943 /* MineHeaderView.h */,
+				297A965B1DB7258000C3B943 /* MineHeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -601,6 +626,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2915017A1DAB4441002E499A /* VCSearch.m in Sources */,
+				297A96561DB7194F00C3B943 /* CauseHeaderView.m in Sources */,
 				297A96321DB621C400C3B943 /* DisPicContaier.m in Sources */,
 				297A964D1DB623DE00C3B943 /* DisPicCell.m in Sources */,
 				291501771DAB4441002E499A /* VCDest.m in Sources */,
@@ -611,7 +637,9 @@
 				297A96421DB6238100C3B943 /* MainFourCell.m in Sources */,
 				297A95FF1DB5C1A700C3B943 /* UIImageView+SDWebImage.m in Sources */,
 				2915017E1DAB4441002E499A /* NetTool.m in Sources */,
+				297A96531DB7158200C3B943 /* CauseCollView.m in Sources */,
 				297A964A1DB6239300C3B943 /* MainTravel.m in Sources */,
+				297A96501DB711E200C3B943 /* DestCollView.m in Sources */,
 				2915017D1DAB4441002E499A /* UIView+Frame.m in Sources */,
 				2915000F1DA9F0D5002E499A /* ViewController.m in Sources */,
 				297A96491DB6239300C3B943 /* MainFunc.m in Sources */,
@@ -623,11 +651,13 @@
 				291501731DAB4441002E499A /* VCBase.m in Sources */,
 				2915017C1DAB4441002E499A /* AppDelegate.m in Sources */,
 				291500091DA9F0D5002E499A /* main.m in Sources */,
+				297A96591DB71D6F00C3B943 /* CauseOrderView.m in Sources */,
 				297A96411DB6238100C3B943 /* MainCollectionView.m in Sources */,
 				291501791DAB4441002E499A /* VCHome.m in Sources */,
 				297A96441DB6238100C3B943 /* MainTravelView.m in Sources */,
 				291501781DAB4441002E499A /* VCDiscover.m in Sources */,
 				297A962F1DB61B8C00C3B943 /* DiscoverCell.m in Sources */,
+				297A965C1DB7258000C3B943 /* MineHeaderView.m in Sources */,
 				297A96431DB6238100C3B943 /* MainFourModalView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
