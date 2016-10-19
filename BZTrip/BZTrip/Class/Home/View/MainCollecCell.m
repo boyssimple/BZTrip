@@ -19,9 +19,10 @@
         [self.contentView addSubview:_ivImg];
         
         _lbName = [[UILabel alloc]init];
-        _lbName.font = [UIFont systemFontOfSize:15.5];
+        _lbName.font = [UIFont systemFontOfSize:13];
         _lbName.textColor = [UIColor blackColor];
         _lbName.textAlignment = NSTextAlignmentCenter;
+        _lbName.adjustsFontForContentSizeCategory = YES;
         [self.contentView addSubview:_lbName];
     }
     return self;
