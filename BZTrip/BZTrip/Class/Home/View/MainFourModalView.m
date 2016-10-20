@@ -19,9 +19,14 @@
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        [self addSubview:self.funcCollection];
+        [self addSubview:self.collView];
     }
     return self;
+}
+
+- (void)setDataSource:(NSMutableArray *)dataSource{
+    _dataSource = dataSource;
+    [self.collView reloadData];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -44,29 +49,29 @@
 
 - (void)layoutSubviews{
     [super layoutSubviews];
-    CGRect r = self.funcCollection.frame;
+    CGRect r = self.collView.frame;
     r.origin.x = 0;
     r.origin.y = 0;
     r.size.width = self.width;
     r.size.height = self.height;
-    self.funcCollection.frame = r;
+    self.collView.frame = r;
 }
 
 //功能区collectionview
-- (UICollectionView*)funcCollection{
-    if (!_funcCollection) {
+- (UICollectionView*)collView{
+    if (!_collView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
         layout.minimumLineSpacing = 10;
         layout.minimumInteritemSpacing = 20;
         layout.sectionInset = UIEdgeInsetsMake(10, 20, 10, 20);
         CGRect f = CGRectMake(0, 0, self.width, self.height);
-        _funcCollection = [[UICollectionView alloc]initWithFrame:f collectionViewLayout:layout];
-        [_funcCollection registerClass:[MainFourCell class] forCellWithReuseIdentifier:@"MainFourCell"];
-        _funcCollection.delegate = self;
-        _funcCollection.dataSource = self;
-        _funcCollection.backgroundColor = RGB3(241);
+        _collView = [[UICollectionView alloc]initWithFrame:f collectionViewLayout:layout];
+        [_collView registerClass:[MainFourCell class] forCellWithReuseIdentifier:@"MainFourCell"];
+        _collView.delegate = self;
+        _collView.dataSource = self;
+        _collView.backgroundColor = RGB3(241);
     }
-    return _funcCollection;
+    return _collView;
 }
 
 

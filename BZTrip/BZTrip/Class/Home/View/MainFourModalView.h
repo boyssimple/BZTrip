@@ -10,7 +10,7 @@
 
 @interface MainFourModalView : UIView
 @property (nonatomic, strong) NSMutableArray *dataSource;
-@property (nonatomic, strong) UICollectionView *funcCollection;
+@property (nonatomic, strong) UICollectionView *collView;
 
 + (CGFloat)calHeight;
 

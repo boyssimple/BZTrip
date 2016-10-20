@@ -8,6 +8,7 @@
 
 #import "VCDiscover.h"
 #import "DiscoverCell.h"
+#import "VCPublishDiscover.h"
 
 @interface VCDiscover ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *table;
@@ -21,7 +22,18 @@
 }
 
 - (void)initUI{
+    UIImage* imageN = [UIImage imageNamed:@"discover_publish_btn"];
+    UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, imageN.size.width , imageN.size.height )];
+    [button setImage:imageN forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(actionNavBar) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];;
     [self.view addSubview:self.table];
+}
+
+- (void)actionNavBar{
+    VCPublishDiscover *vc = [[VCPublishDiscover alloc]init];
+    vc.hidesBottomBarWhenPushed = TRUE;
+    [self.navigationController pushViewController:vc animated:TRUE];
 }
 
 #pragma mark - UITableViewDelegate

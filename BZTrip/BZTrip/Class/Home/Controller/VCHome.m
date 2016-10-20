@@ -80,7 +80,6 @@
         [fourFuncArr addObject:[NSString stringWithFormat:@"Main_Theme_0%d",i+1]];
     }
     self.mainFourCollec.dataSource = fourFuncArr;
-    [self.mainFourCollec.funcCollection reloadData];
     [self.mainScroll addSubview:self.mainFourCollec];
     
     //低部主题
