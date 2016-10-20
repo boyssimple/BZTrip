@@ -27,7 +27,7 @@
 }
 
 - (void)initUI{
-    self.view.backgroundColor = RGB3(238);
+    self.view.backgroundColor = RGB3(244);
     [self.view addSubview:self.table];
 }
 

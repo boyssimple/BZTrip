@@ -48,6 +48,12 @@
 		297A96561DB7194F00C3B943 /* CauseHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96551DB7194F00C3B943 /* CauseHeaderView.m */; };
 		297A96591DB71D6F00C3B943 /* CauseOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96581DB71D6F00C3B943 /* CauseOrderView.m */; };
 		297A965C1DB7258000C3B943 /* MineHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A965B1DB7258000C3B943 /* MineHeaderView.m */; };
+		297A96621DB763E100C3B943 /* MineMyOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96611DB763E100C3B943 /* MineMyOrderView.m */; };
+		297A96651DB7664E00C3B943 /* MineFuncView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96641DB7664E00C3B943 /* MineFuncView.m */; };
+		297A96681DB7668F00C3B943 /* MineFuncCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96671DB7668F00C3B943 /* MineFuncCell.m */; };
+		297A966B1DB76A6800C3B943 /* MineElseFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A966A1DB76A6800C3B943 /* MineElseFunc.m */; };
+		297A966E1DB76ACD00C3B943 /* MineElseFuncCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A966D1DB76ACD00C3B943 /* MineElseFuncCell.m */; };
+		297A96711DB864D400C3B943 /* VCRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96701DB864D400C3B943 /* VCRegister.m */; };
 		5C862284A9A22B936385A009 /* libPods-BZTrip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +138,18 @@
 		297A96581DB71D6F00C3B943 /* CauseOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CauseOrderView.m; sourceTree = "<group>"; };
 		297A965A1DB7258000C3B943 /* MineHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHeaderView.h; sourceTree = "<group>"; };
 		297A965B1DB7258000C3B943 /* MineHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHeaderView.m; sourceTree = "<group>"; };
+		297A96601DB763E100C3B943 /* MineMyOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineMyOrderView.h; sourceTree = "<group>"; };
+		297A96611DB763E100C3B943 /* MineMyOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineMyOrderView.m; sourceTree = "<group>"; };
+		297A96631DB7664E00C3B943 /* MineFuncView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineFuncView.h; sourceTree = "<group>"; };
+		297A96641DB7664E00C3B943 /* MineFuncView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineFuncView.m; sourceTree = "<group>"; };
+		297A96661DB7668F00C3B943 /* MineFuncCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineFuncCell.h; sourceTree = "<group>"; };
+		297A96671DB7668F00C3B943 /* MineFuncCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineFuncCell.m; sourceTree = "<group>"; };
+		297A96691DB76A6800C3B943 /* MineElseFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineElseFunc.h; sourceTree = "<group>"; };
+		297A966A1DB76A6800C3B943 /* MineElseFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineElseFunc.m; sourceTree = "<group>"; };
+		297A966C1DB76ACD00C3B943 /* MineElseFuncCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineElseFuncCell.h; sourceTree = "<group>"; };
+		297A966D1DB76ACD00C3B943 /* MineElseFuncCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineElseFuncCell.m; sourceTree = "<group>"; };
+		297A966F1DB864D400C3B943 /* VCRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCRegister.h; sourceTree = "<group>"; };
+		297A96701DB864D400C3B943 /* VCRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCRegister.m; sourceTree = "<group>"; };
 		6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BZTrip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -405,6 +423,8 @@
 				291501651DAB4441002E499A /* VCMine.m */,
 				297A962A1DB6084300C3B943 /* VCLogin.h */,
 				297A962B1DB6084300C3B943 /* VCLogin.m */,
+				297A966F1DB864D400C3B943 /* VCRegister.h */,
+				297A96701DB864D400C3B943 /* VCRegister.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -421,6 +441,16 @@
 			children = (
 				297A965A1DB7258000C3B943 /* MineHeaderView.h */,
 				297A965B1DB7258000C3B943 /* MineHeaderView.m */,
+				297A96601DB763E100C3B943 /* MineMyOrderView.h */,
+				297A96611DB763E100C3B943 /* MineMyOrderView.m */,
+				297A96631DB7664E00C3B943 /* MineFuncView.h */,
+				297A96641DB7664E00C3B943 /* MineFuncView.m */,
+				297A96661DB7668F00C3B943 /* MineFuncCell.h */,
+				297A96671DB7668F00C3B943 /* MineFuncCell.m */,
+				297A96691DB76A6800C3B943 /* MineElseFunc.h */,
+				297A966A1DB76A6800C3B943 /* MineElseFunc.m */,
+				297A966C1DB76ACD00C3B943 /* MineElseFuncCell.h */,
+				297A966D1DB76ACD00C3B943 /* MineElseFuncCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -630,12 +660,15 @@
 				297A96321DB621C400C3B943 /* DisPicContaier.m in Sources */,
 				297A964D1DB623DE00C3B943 /* DisPicCell.m in Sources */,
 				291501771DAB4441002E499A /* VCDest.m in Sources */,
+				297A96711DB864D400C3B943 /* VCRegister.m in Sources */,
 				2915017B1DAB4441002E499A /* VCMine.m in Sources */,
 				291501761DAB4441002E499A /* VCCause.m in Sources */,
+				297A96681DB7668F00C3B943 /* MineFuncCell.m in Sources */,
 				291501751DAB4441002E499A /* VCNavBase.m in Sources */,
 				297A962C1DB6084300C3B943 /* VCLogin.m in Sources */,
 				297A96421DB6238100C3B943 /* MainFourCell.m in Sources */,
 				297A95FF1DB5C1A700C3B943 /* UIImageView+SDWebImage.m in Sources */,
+				297A96621DB763E100C3B943 /* MineMyOrderView.m in Sources */,
 				2915017E1DAB4441002E499A /* NetTool.m in Sources */,
 				297A96531DB7158200C3B943 /* CauseCollView.m in Sources */,
 				297A964A1DB6239300C3B943 /* MainTravel.m in Sources */,
@@ -643,6 +676,7 @@
 				2915017D1DAB4441002E499A /* UIView+Frame.m in Sources */,
 				2915000F1DA9F0D5002E499A /* ViewController.m in Sources */,
 				297A96491DB6239300C3B943 /* MainFunc.m in Sources */,
+				297A966E1DB76ACD00C3B943 /* MineElseFuncCell.m in Sources */,
 				297A96061DB5C36E00C3B943 /* ADPCollectionViewCell.m in Sources */,
 				297A96401DB6238100C3B943 /* MainCollecCell.m in Sources */,
 				291501741DAB4441002E499A /* VCMain.m in Sources */,
@@ -654,9 +688,11 @@
 				297A96591DB71D6F00C3B943 /* CauseOrderView.m in Sources */,
 				297A96411DB6238100C3B943 /* MainCollectionView.m in Sources */,
 				291501791DAB4441002E499A /* VCHome.m in Sources */,
+				297A966B1DB76A6800C3B943 /* MineElseFunc.m in Sources */,
 				297A96441DB6238100C3B943 /* MainTravelView.m in Sources */,
 				291501781DAB4441002E499A /* VCDiscover.m in Sources */,
 				297A962F1DB61B8C00C3B943 /* DiscoverCell.m in Sources */,
+				297A96651DB7664E00C3B943 /* MineFuncView.m in Sources */,
 				297A965C1DB7258000C3B943 /* MineHeaderView.m in Sources */,
 				297A96431DB6238100C3B943 /* MainFourModalView.m in Sources */,
 			);

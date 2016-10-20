@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@protocol MineHeaderViewDelegate ;
 @interface MineHeaderView : UIView
+@property (nonatomic, assign) id<MineHeaderViewDelegate> delegate;
 - (void)updateData;
 + (CGFloat)calHeight;
+@end
+
+@protocol MineHeaderViewDelegate <NSObject>
+
+- (void)loginActin;
+
 @end

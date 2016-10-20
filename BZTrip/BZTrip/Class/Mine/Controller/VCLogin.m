@@ -7,6 +7,8 @@
 //
 
 #import "VCLogin.h"
+#import "VCRegister.h"
+
 
 @interface VCLogin()
 @property (nonatomic, strong) UIButton *btnClose;
@@ -38,6 +40,11 @@
     [super viewDidLoad];
     [self initUI];
     self.view.backgroundColor = RGB(143, 199, 234);
+}
+
+
+- (void)viewWillAppear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)initUI{
@@ -183,7 +190,8 @@
 }
 
 - (void)registerAction:(UIButton*)sender{
-    
+    VCRegister *vc = [[VCRegister alloc]init];
+    [self.navigationController pushViewController:vc animated:TRUE];
 }
 
 - (void)qqAction:(UIButton*)sender{

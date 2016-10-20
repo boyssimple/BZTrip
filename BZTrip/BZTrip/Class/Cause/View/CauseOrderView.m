@@ -69,16 +69,16 @@
         
         
         _vLine = [[UIView alloc]init];
-        _vLine.backgroundColor = RGB3(238);
+        _vLine.backgroundColor = RGB3(244);
         [self addSubview:_vLine];
         
         _vLineOne = [[UIView alloc]init];
-        _vLineOne.backgroundColor = RGB3(238);
+        _vLineOne.backgroundColor = RGB3(244);
         [self addSubview:_vLineOne];
         
         
         _vLineTwo = [[UIView alloc]init];
-        _vLineTwo.backgroundColor = RGB3(238);
+        _vLineTwo.backgroundColor = RGB3(244);
         [self addSubview:_vLineTwo];
     }
     return self;

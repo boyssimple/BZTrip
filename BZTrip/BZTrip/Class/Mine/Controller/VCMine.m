@@ -7,16 +7,20 @@
 //
 
 #import "VCMine.h"
-#import "CauseCollView.h"
+#import "VCLogin.h"
 #import "MineHeaderView.h"
 #import "CauseOrderView.h"
+#import "MineMyOrderView.h"
+#import "MineFuncView.h"
+#import "MineElseFunc.h"
 
-@interface VCMine ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
+@interface VCMine ()<UITableViewDelegate,UITableViewDataSource,MineHeaderViewDelegate>
 @property (nonatomic, strong) UITableView *table;
-@property (nonatomic, strong) UICollectionView *collView;
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) MineHeaderView *headerView;
-@property (nonatomic, strong) CauseOrderView *causeOrderView;
+@property (nonatomic, strong) MineMyOrderView *orderView;
+@property (nonatomic, strong) MineFuncView *funcView;
+@property (nonatomic, strong) MineElseFunc *elseFuncView;
 @end
 
 @implementation VCMine
@@ -26,17 +30,21 @@
     [self initUI];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+//    self.navigationController.navigationBarHidden = YES;
+}
+
 - (void)initUI{
-    self.view.backgroundColor = RGB3(238);
+    self.view.backgroundColor = RGB3(244);
     [self.view addSubview:self.table];
 }
 
 - (NSArray*)dataSource{
-    return @[@{@"img":@"abc",@"name":@"我的小店"},
-             @{@"img":@"abc",@"name":@"我的团队"},
-             @{@"img":@"abc",@"name":@"邀请成员"},
-             @{@"img":@"abc",@"name":@"我的助手"},
-             @{@"img":@"abc",@"name":@"掌柜课堂"}];
+    return @[@{@"img":@"abc",@"name":@"待付款"},
+             @{@"img":@"abc",@"name":@"待发货"},
+             @{@"img":@"abc",@"name":@"待收货"},
+             @{@"img":@"abc",@"name":@"待评价"},
+             @{@"img":@"abc",@"name":@"售后/退款"}];
 }
 
 #pragma mark - UITableViewDelegate
@@ -56,50 +64,38 @@
 
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 3;
+    return 4;
 }
 
 - (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     if (section == 0) {
         return self.headerView;
     }else if(section == 1){
-        return self.causeOrderView;
+        return self.orderView;
+    }else if(section == 2){
+        return self.funcView;
     }
-    return self.collView;
+    return self.elseFuncView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if (section == 0) {
         return [MineHeaderView calHeight];
     }else if(section == 1){
-        return [CauseOrderView calHeight];
+        return [MineMyOrderView calHeight];
+    }else if(section == 2){
+        return [MineFuncView calHeight];
     }
-    return self.collView.height;
+    return [MineElseFunc calHeight];
 }
 
-#pragma mark - UICollectionViewDelegate
+#pragma mark - MineHeaderViewDelegate
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return self.dataSource.count+1;
+- (void)loginActin{
+    VCLogin *vc = [[VCLogin alloc]init];
+    UINavigationController *nv = [[UINavigationController alloc]initWithRootViewController:vc];
+    [self presentViewController:nv animated:TRUE completion:nil];
 }
-
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    CauseCollView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CauseCollView" forIndexPath:indexPath];
-    if (indexPath.row <= self.dataSource.count-1) {
-        
-        NSDictionary* data = [self.dataSource objectAtIndex:indexPath.row];
-        [cell updateData:data];
-    }
-    return cell;
-}
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    CGFloat mw = 2;
-    CGFloat w = (DEVICEWIDTH - mw)/3;
-    return (CGSize){w,w};
-}
-
 
 #pragma mark - Getter Setter
 
@@ -115,42 +111,40 @@
 }
 
 
-//功能区collectionview
-- (UICollectionView*)collView{
-    if (!_collView) {
-        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
-        layout.minimumLineSpacing = 1;
-        layout.minimumInteritemSpacing = 1;
-        layout.sectionInset = UIEdgeInsetsMake(10, 0, 0, 0);
-        
-        
-        CGFloat mw = 2;
-        CGFloat w = (DEVICEWIDTH - mw)/3;
-        
-        CGRect f = CGRectMake(0, 0, self.table.width,w*2+11);
-        _collView = [[UICollectionView alloc]initWithFrame:f collectionViewLayout:layout];
-        [_collView registerClass:[CauseCollView class] forCellWithReuseIdentifier:@"CauseCollView"];
-        _collView.delegate = self;
-        _collView.dataSource = self;
-        _collView.backgroundColor = [UIColor clearColor];
-    }
-    return _collView;
-}
-
 - (MineHeaderView*)headerView{
     if (!_headerView) {
         _headerView = [[MineHeaderView alloc]initWithFrame:CGRectMake(0, 0, DEVICEWIDTH, 100)];
+        _headerView.delegate = self;
         [_headerView updateData];
     }
     return _headerView;
 }
 
-- (CauseOrderView*)causeOrderView{
-    if (!_causeOrderView) {
-        _causeOrderView = [[CauseOrderView alloc]initWithFrame:CGRectMake(0, 0, DEVICEWIDTH, 100)];
+- (MineMyOrderView*)orderView{
+    if (!_orderView) {
+        _orderView = [[MineMyOrderView alloc]initWithFrame:CGRectMake(0, 0, DEVICEWIDTH, 100)];
+        [_orderView updateData];
     }
-    return _causeOrderView;
+    return _orderView;
 }
+
+- (MineFuncView*)funcView{
+    if (!_funcView) {
+        _funcView = [[MineFuncView alloc]initWithFrame:CGRectMake(0, 0, DEVICEWIDTH, 100)];
+        _funcView.dataSource = [self.dataSource mutableCopy];
+    }
+    return _funcView;
+}
+
+- (MineElseFunc*)elseFuncView{
+    if (!_elseFuncView) {
+        _elseFuncView = [[MineElseFunc alloc]initWithFrame:CGRectMake(0, 0, DEVICEWIDTH, 100)];
+    }
+    return _elseFuncView;
+}
+
+
+
 
 
 @end
