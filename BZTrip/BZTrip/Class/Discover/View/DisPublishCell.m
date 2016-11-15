@@ -25,6 +25,7 @@
         
         _btnAdd = [UIButton buttonWithType:UIButtonTypeCustom];
         [_btnAdd setImage:[UIImage imageNamed:@"Discover_Add_Btn"] forState:UIControlStateNormal];
+        [_btnAdd setImage:[UIImage imageNamed:@"Discover_Add_Btn"] forState:UIControlStateHighlighted];
         _btnAdd.layer.cornerRadius = 5;
         _btnAdd.layer.masksToBounds = YES;
         _btnAdd.hidden = YES;

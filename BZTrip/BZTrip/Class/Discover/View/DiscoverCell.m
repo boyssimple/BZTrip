@@ -154,7 +154,7 @@
 }
 
 +(CGFloat)calHeight{
-    CGFloat height = 60.5+15+10+40+20 + [DisPicContaier calHeight:@[@"abc",@"abc",@"abc",@"abc",@"abc"]]+50;
+    CGFloat height = 60.5+15+100 + [DisPicContaier calHeight:@[@"abc",@"abc",@"abc",@"abc",@"abc"]];
     NSString *desc = @"【中国.巴中光雾山之旅】香炉山，登烽造极，下次还要去。";
     UILabel *lbDesc = [[UILabel alloc]init];
     lbDesc.font = [UIFont systemFontOfSize:14];
