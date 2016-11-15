@@ -42,6 +42,12 @@
     return (CGSize){w,w+20};
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if ([self.delegate respondsToSelector:@selector(functionAction:)]) {
+        [self.delegate functionAction:indexPath.row];
+    }
+}
+
 - (void)layoutSubviews{
     [super layoutSubviews];
     CGRect r = self.funcCollection.frame;

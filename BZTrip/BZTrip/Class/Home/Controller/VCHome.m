@@ -13,10 +13,11 @@
 #import "MainFourModalView.h"
 #import "MainTravelView.h"
 #import "MainTravel.h"
+#import "VCLocNative.h"
 
 #define SCROLLVIEW_HEIGHT 160
 
-@interface VCHome ()
+@interface VCHome ()<MainCollectionViewDelegate>
 @property (nonatomic, strong) UIScrollView *mainScroll;
 @property (nonatomic, strong) MainCollectionView *mainFunc;
 @property (nonatomic, strong) MainFourModalView *mainFourCollec;
@@ -94,8 +95,19 @@
     _mainScroll.contentSize = CGSizeMake(_mainScroll.contentSize.width, self.mainTravelView.top);
 }
 
+#pragma mark - MainCollectionViewDelegate
+- (void)functionAction:(NSInteger)index{
+    VCLocNative *vc = [[VCLocNative alloc]init];
+    vc.hidesBottomBarWhenPushed = TRUE;
+    [self.navigationController pushViewController:vc animated:TRUE];
+}
+
 - (void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBarHidden = YES;
+}
+
+- (void)viewWillDisappear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = NO;
 }
 
 - (UIScrollView*)mainScroll{
@@ -108,6 +120,7 @@
 - (MainCollectionView*)mainFunc{
     if (!_mainFunc) {
         _mainFunc = [[MainCollectionView alloc]initWithFrame:CGRectMake(0, SCROLLVIEW_HEIGHT, DEVICEWIDTH, [MainCollectionView calHeight])];
+        _mainFunc.delegate = self;
     }
     return _mainFunc;
 }

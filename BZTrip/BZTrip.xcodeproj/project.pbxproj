@@ -57,6 +57,7 @@
 		297A96AF1DB8BC7000C3B943 /* VCPublishDiscover.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96AE1DB8BC7000C3B943 /* VCPublishDiscover.m */; };
 		297A96B21DB8C4FD00C3B943 /* DisPublishCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96B11DB8C4FD00C3B943 /* DisPublishCell.m */; };
 		297A96B51DB8C9D200C3B943 /* Discover.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96B41DB8C9D200C3B943 /* Discover.m */; };
+		29C37C6F1DDAFA3800FD2A64 /* VCLocNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C37C6E1DDAFA3800FD2A64 /* VCLocNative.m */; };
 		5C862284A9A22B936385A009 /* libPods-BZTrip.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */; };
 /* End PBXBuildFile section */
 
@@ -159,6 +160,8 @@
 		297A96B11DB8C4FD00C3B943 /* DisPublishCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisPublishCell.m; sourceTree = "<group>"; };
 		297A96B31DB8C9D200C3B943 /* Discover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Discover.h; sourceTree = "<group>"; };
 		297A96B41DB8C9D200C3B943 /* Discover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Discover.m; sourceTree = "<group>"; };
+		29C37C6D1DDAFA3800FD2A64 /* VCLocNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCLocNative.h; sourceTree = "<group>"; };
+		29C37C6E1DDAFA3800FD2A64 /* VCLocNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCLocNative.m; sourceTree = "<group>"; };
 		6D60FAA883F2DCE3B5071F3F /* libPods-BZTrip.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BZTrip.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -379,6 +382,8 @@
 				2915015C1DAB4441002E499A /* VCHome.m */,
 				2915015D1DAB4441002E499A /* VCSearch.h */,
 				2915015E1DAB4441002E499A /* VCSearch.m */,
+				29C37C6D1DDAFA3800FD2A64 /* VCLocNative.h */,
+				29C37C6E1DDAFA3800FD2A64 /* VCLocNative.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -684,6 +689,7 @@
 				297A96421DB6238100C3B943 /* MainFourCell.m in Sources */,
 				297A96B51DB8C9D200C3B943 /* Discover.m in Sources */,
 				297A95FF1DB5C1A700C3B943 /* UIImageView+SDWebImage.m in Sources */,
+				29C37C6F1DDAFA3800FD2A64 /* VCLocNative.m in Sources */,
 				297A96621DB763E100C3B943 /* MineMyOrderView.m in Sources */,
 				297A96B21DB8C4FD00C3B943 /* DisPublishCell.m in Sources */,
 				2915017E1DAB4441002E499A /* NetTool.m in Sources */,
