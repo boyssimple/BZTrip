@@ -9,9 +9,11 @@
 #import "VCLocNative.h"
 #import "CellLocNative.h"
 #import "SectionLocNative.h"
+#import "HeaderLocNative.h"
 
 @interface VCLocNative ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *table;
+@property (nonatomic, strong) HeaderLocNative *header;
 @end
 
 @implementation VCLocNative
@@ -45,7 +47,7 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return 2;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
@@ -68,9 +70,19 @@
         _table.delegate = self;
         _table.dataSource = self;
         _table.backgroundColor = [UIColor whiteColor];
+        _table.tableHeaderView = self.header;
         _table.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
     return _table;
+}
+
+- (HeaderLocNative*)header{
+    if (!_header) {
+        _header = [[HeaderLocNative alloc]initWithFrame:CGRectMake(0, 0, DEVICEWIDTH, [HeaderLocNative calHeight:@[@{},@{},@{},@{},@{},@{}]])];
+        _header.dataSource =  [@[@{},@{},@{},@{},@{},@{}] mutableCopy];
+        [_header updateData];
+    }
+    return _header;
 }
 
 @end
