@@ -25,8 +25,8 @@
 #define TABBAR_HEIGHT 49
 
 //颜色
-#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
-#define RGB(r,g,b) RGBA(r,g,b,1)
-#define RGB3(v)RGB(v,v,v)
+# define RGB3(a) [UIColor colorWithRed:(a)/255.0 green:(a)/255.0 blue:(a)/255.0 alpha:1]
+# define RGB(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+# define RGBA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 #define BASE_COLOR RGB(4, 175, 255)
 #endif /* PrefixHeader_pch */

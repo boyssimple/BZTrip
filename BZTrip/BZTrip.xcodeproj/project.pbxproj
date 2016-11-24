@@ -24,6 +24,12 @@
 		2915017C1DAB4441002E499A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915016A1DAB4441002E499A /* AppDelegate.m */; };
 		2915017D1DAB4441002E499A /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2915016F1DAB4441002E499A /* UIView+Frame.m */; };
 		2915017E1DAB4441002E499A /* NetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 291501721DAB4441002E499A /* NetTool.m */; };
+		295D43091DE6D1A500C8BE91 /* VCEntranceTicketList.m in Sources */ = {isa = PBXBuildFile; fileRef = 295D43081DE6D1A500C8BE91 /* VCEntranceTicketList.m */; };
+		295D430C1DE6D2ED00C8BE91 /* CellEntranceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 295D430B1DE6D2ED00C8BE91 /* CellEntranceTicket.m */; };
+		295D430F1DE6D30F00C8BE91 /* SectionEntranceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 295D430E1DE6D30F00C8BE91 /* SectionEntranceTicket.m */; };
+		295D43121DE6D43B00C8BE91 /* SectionLocNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 295D43111DE6D43B00C8BE91 /* SectionLocNative.m */; };
+		295D43151DE6D45100C8BE91 /* CellLocNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 295D43141DE6D45100C8BE91 /* CellLocNative.m */; };
+		295D43181DE6D60800C8BE91 /* CollCellLocNative.m in Sources */ = {isa = PBXBuildFile; fileRef = 295D43171DE6D60800C8BE91 /* CollCellLocNative.m */; };
 		297A95FF1DB5C1A700C3B943 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A95FE1DB5C1A700C3B943 /* UIImageView+SDWebImage.m */; };
 		297A96051DB5C36E00C3B943 /* ADPCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96021DB5C36E00C3B943 /* ADPCollectionView.m */; };
 		297A96061DB5C36E00C3B943 /* ADPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 297A96041DB5C36E00C3B943 /* ADPCollectionViewCell.m */; };
@@ -98,6 +104,18 @@
 		2915016F1DAB4441002E499A /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		291501711DAB4441002E499A /* NetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetTool.h; sourceTree = "<group>"; };
 		291501721DAB4441002E499A /* NetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetTool.m; sourceTree = "<group>"; };
+		295D43071DE6D1A500C8BE91 /* VCEntranceTicketList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCEntranceTicketList.h; sourceTree = "<group>"; };
+		295D43081DE6D1A500C8BE91 /* VCEntranceTicketList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCEntranceTicketList.m; sourceTree = "<group>"; };
+		295D430A1DE6D2ED00C8BE91 /* CellEntranceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellEntranceTicket.h; sourceTree = "<group>"; };
+		295D430B1DE6D2ED00C8BE91 /* CellEntranceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellEntranceTicket.m; sourceTree = "<group>"; };
+		295D430D1DE6D30F00C8BE91 /* SectionEntranceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionEntranceTicket.h; sourceTree = "<group>"; };
+		295D430E1DE6D30F00C8BE91 /* SectionEntranceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionEntranceTicket.m; sourceTree = "<group>"; };
+		295D43101DE6D43B00C8BE91 /* SectionLocNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionLocNative.h; sourceTree = "<group>"; };
+		295D43111DE6D43B00C8BE91 /* SectionLocNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionLocNative.m; sourceTree = "<group>"; };
+		295D43131DE6D45100C8BE91 /* CellLocNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellLocNative.h; sourceTree = "<group>"; };
+		295D43141DE6D45100C8BE91 /* CellLocNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellLocNative.m; sourceTree = "<group>"; };
+		295D43161DE6D60800C8BE91 /* CollCellLocNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollCellLocNative.h; sourceTree = "<group>"; };
+		295D43171DE6D60800C8BE91 /* CollCellLocNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollCellLocNative.m; sourceTree = "<group>"; };
 		297A95FD1DB5C1A700C3B943 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
 		297A95FE1DB5C1A700C3B943 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
 		297A96011DB5C36E00C3B943 /* ADPCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPCollectionView.h; sourceTree = "<group>"; };
@@ -384,6 +402,8 @@
 				2915015E1DAB4441002E499A /* VCSearch.m */,
 				29C37C6D1DDAFA3800FD2A64 /* VCLocNative.h */,
 				29C37C6E1DDAFA3800FD2A64 /* VCLocNative.m */,
+				295D43071DE6D1A500C8BE91 /* VCEntranceTicketList.h */,
+				295D43081DE6D1A500C8BE91 /* VCEntranceTicketList.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -414,6 +434,16 @@
 				297A963C1DB6238100C3B943 /* MainFourModalView.m */,
 				297A963D1DB6238100C3B943 /* MainTravelView.h */,
 				297A963E1DB6238100C3B943 /* MainTravelView.m */,
+				295D430A1DE6D2ED00C8BE91 /* CellEntranceTicket.h */,
+				295D430B1DE6D2ED00C8BE91 /* CellEntranceTicket.m */,
+				295D430D1DE6D30F00C8BE91 /* SectionEntranceTicket.h */,
+				295D430E1DE6D30F00C8BE91 /* SectionEntranceTicket.m */,
+				295D43131DE6D45100C8BE91 /* CellLocNative.h */,
+				295D43141DE6D45100C8BE91 /* CellLocNative.m */,
+				295D43101DE6D43B00C8BE91 /* SectionLocNative.h */,
+				295D43111DE6D43B00C8BE91 /* SectionLocNative.m */,
+				295D43161DE6D60800C8BE91 /* CollCellLocNative.h */,
+				295D43171DE6D60800C8BE91 /* CollCellLocNative.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -677,11 +707,14 @@
 			files = (
 				2915017A1DAB4441002E499A /* VCSearch.m in Sources */,
 				297A96561DB7194F00C3B943 /* CauseHeaderView.m in Sources */,
+				295D43091DE6D1A500C8BE91 /* VCEntranceTicketList.m in Sources */,
 				297A96321DB621C400C3B943 /* DisPicContaier.m in Sources */,
 				297A964D1DB623DE00C3B943 /* DisPicCell.m in Sources */,
 				291501771DAB4441002E499A /* VCDest.m in Sources */,
 				297A96711DB864D400C3B943 /* VCRegister.m in Sources */,
+				295D43121DE6D43B00C8BE91 /* SectionLocNative.m in Sources */,
 				2915017B1DAB4441002E499A /* VCMine.m in Sources */,
+				295D430F1DE6D30F00C8BE91 /* SectionEntranceTicket.m in Sources */,
 				291501761DAB4441002E499A /* VCCause.m in Sources */,
 				297A96681DB7668F00C3B943 /* MineFuncCell.m in Sources */,
 				291501751DAB4441002E499A /* VCNavBase.m in Sources */,
@@ -693,6 +726,7 @@
 				297A96621DB763E100C3B943 /* MineMyOrderView.m in Sources */,
 				297A96B21DB8C4FD00C3B943 /* DisPublishCell.m in Sources */,
 				2915017E1DAB4441002E499A /* NetTool.m in Sources */,
+				295D43181DE6D60800C8BE91 /* CollCellLocNative.m in Sources */,
 				297A96531DB7158200C3B943 /* CauseCollView.m in Sources */,
 				297A964A1DB6239300C3B943 /* MainTravel.m in Sources */,
 				297A96501DB711E200C3B943 /* DestCollView.m in Sources */,
@@ -700,6 +734,7 @@
 				2915000F1DA9F0D5002E499A /* ViewController.m in Sources */,
 				297A96491DB6239300C3B943 /* MainFunc.m in Sources */,
 				297A966E1DB76ACD00C3B943 /* MineElseFuncCell.m in Sources */,
+				295D43151DE6D45100C8BE91 /* CellLocNative.m in Sources */,
 				297A96061DB5C36E00C3B943 /* ADPCollectionViewCell.m in Sources */,
 				297A96401DB6238100C3B943 /* MainCollecCell.m in Sources */,
 				291501741DAB4441002E499A /* VCMain.m in Sources */,
@@ -713,6 +748,7 @@
 				291501791DAB4441002E499A /* VCHome.m in Sources */,
 				297A966B1DB76A6800C3B943 /* MineElseFunc.m in Sources */,
 				297A96441DB6238100C3B943 /* MainTravelView.m in Sources */,
+				295D430C1DE6D2ED00C8BE91 /* CellEntranceTicket.m in Sources */,
 				297A96AF1DB8BC7000C3B943 /* VCPublishDiscover.m in Sources */,
 				291501781DAB4441002E499A /* VCDiscover.m in Sources */,
 				297A962F1DB61B8C00C3B943 /* DiscoverCell.m in Sources */,

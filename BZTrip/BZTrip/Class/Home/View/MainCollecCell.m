@@ -22,7 +22,6 @@
         _lbName.font = [UIFont systemFontOfSize:13];
         _lbName.textColor = [UIColor blackColor];
         _lbName.textAlignment = NSTextAlignmentCenter;
-        _lbName.adjustsFontForContentSizeCategory = YES;
         [self.contentView addSubview:_lbName];
     }
     return self;
